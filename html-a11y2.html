@@ -18,34 +18,46 @@
 
       form {
         width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #3334;
+        border-radius: 10%;
       }
 
-      li {
+      label, input {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0 auto;
+        margin-bottom: 30px;
       }
+
+      div {
+        display: flex;
+        flex-direction: row;
+      }
+
     </style>
   </head>
 
   <body>
-
+   
     <form>
-      <ul>
-        <li>
-          Name
-          <input type="text" name="name">
-        </li>
-        <li>
-          Age
-          <input type="number" name="age">
-        </li>
-        <li>
-          Email address
-          <input type="email" name="email">
-        </li>
-      </ul>
+      <h1 style="text-align: center;">Fill put this form:</h1>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+      </div>
     </form>
 
   </body>
