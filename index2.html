@@ -37,11 +37,19 @@
         flex-direction: row;
       }
 
-      button {
-        margin-left: 140px;
-        width: 30%;
-      }
 
+      a {
+        text-decoration: none;
+        color: white;        
+        color: white;
+        background-color: blue;
+        border-radius: 10px;
+        width: 170px;
+        padding: 10px;
+        width: 30%;
+        gap: 1rem;
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -63,11 +71,16 @@
         <label for="email">Email</label>
         <input type="text" id="email" name="email">
       </div>
-      <button type="submit" id="submit" name="submit">Submit Form</button>
+
+      <div style="display: flex; flex-direction: row;">
+        <a type="submit" id="submit" name="submit">Submit Form</a> 
+        
+        
+        <a style=" width: 60%; background-color:  rgb(150, 106, 106); justify-content: flex-end;" href="./index3.html">Next page:buttons</a></button>
+    </div>
     </form>
 
-    <button style="margin: 20%; width: 60%; background-color: rgb(150, 106, 106); justify-content: flex-end;"><a style="text-decoration: none; color: white;" href="./index3.html">Next page:buttons</a></button>
-
+   
   </body>
 
 </html>
