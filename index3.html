@@ -33,7 +33,7 @@
       a {
         text-decoration: none;
         color: white;        
-        color: white;
+/*         color: white;  Duplicate */
         background-color: blue;
         border-radius: 10px;
         width: 170px;
@@ -49,10 +49,21 @@
 
     <p>For more information about our activities, check out our </p>
        <a href="./html-a11y1.html">Fundraising Page</a> 
-       
-       <a href="./html-a11y2.html">Education Page</a> 
-          <a href="./html-a11y3.html">Sponsorship Page</a> 
-          <a href="./html-a11y4.html">Assessment Page</a> 
+
+<!-- if you plan to make a listed navigation, you should use <nav> and <ul/ol><li> elements (then style those elements): -->
+
+    <nav>
+      <ul>
+        <li><a href="./html-a11y2.html">Education Page</a></li>
+        <li><a href="./html-a11y2.html">Education Page</a></li>
+        <li><a href="./html-a11y3.html">Sponsorship Page (PDF, 8MB)</a></li>
+        <li><a href="./html-a11y4.html">Assessment Page (.docx)</a></li>
+      </ul>  
+    </nav>
+    
+<!-- additionally, for downloads, it's important to prepare users that they'll be downloading a file so they're not surprised to see some random file downloading suddenly. For files that may take a few moments to download, it's also good to list their sizes so users can expect a longer wait. -->
+          
+          
         <div style="margin-top: 100px;">
           <a style="margin: 20%; width: 60%; background-color:  rgb(150, 106, 106); justify-content: flex-end;" href="./index4.html"> Next page:images</a>
         </div>    
